@@ -38,8 +38,9 @@ jobs:
           uses: actions/checkout@v2
         
         - name: Deploy to Azure Web Apps
-          uses: Azure/static-web-apps-deploy@v1
+          uses: azure/webapps-deploy@v2
           with:
+            app-name: DemoWebAppNode
             publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_06EE9019ACD94517A4AAC5CE6F777ED9 }}
             action: "upload"
             app_location: "dist/helloworld-cicd-github-actions-web-apps/"
