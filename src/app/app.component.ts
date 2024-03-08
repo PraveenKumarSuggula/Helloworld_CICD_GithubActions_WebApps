@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Helloworld_CICD_GithubActions_WebApps';
+  title = 'Helloworld_CICD_GithubActions_WebApps 001';
 }
